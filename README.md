@@ -1,6 +1,6 @@
 # Capstone-Shanghai---Team-H
 
-# Git Quick Start (Ringkas) - Capstone Shanghai Team H
+# Git Quick Start - Capstone Shanghai Team H
 
 ```bash
 # 1️⃣ Clone repository (hanya sekali di awal)

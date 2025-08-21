@@ -6,8 +6,112 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Home</title>
   </head>
-  <body>
-    <!-- let's code here -->
-    <h1 class="font-SFPro">ini adalah halaman home</h1>
+  <body class="p-4 lg:px-[120px]">
+    <!-- 1. navbar -->
+    <nav
+      class="flex justify-between items-center gap-4 lg:gap-[80px] m-auto lg:max-w-[1440px] lg:mb-[48px]"
+    >
+      <!-- logo -->
+      <div class="flex lg:max-w-[160px] gap-[9.19px]">
+        <img
+          src="./src/Assets/img/Logo.png"
+          alt="Logo"
+          class="w-8 lg:w-[42px]"
+        />
+        <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+          >shirt</span
+        >
+      </div>
+      <!-- catalog dan search -->
+      <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+        <img
+          src="./src/Assets/img/Category Container (2).png"
+          alt="Category"
+          class="block lg:hidden"
+        />
+        <img
+          src="./src/Assets/img/Category Container.png"
+          alt="Categorylg"
+          class="hidden lg:block"
+        />
+        <!-- search and mag glasses-->
+        <div class="w-full relative">
+          <img
+            src="./src/Assets/img/mg glasses.png"
+            alt="mag glasses"
+            class="absolute top-2 left-2"
+          />
+          <input
+            type="text"
+            placeholder="Search"
+            class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+          />
+        </div>
+      </div>
+      <!-- shopping cart and hamburger -->
+      <div class="flex gap-[13px] items-center lg:gap-[33px]w-full">
+        <div class="flex-shrink-0 relative">
+          <img
+            src="./src/Assets/img/shopping-cart-01.png"
+            alt="cart"
+            class="lg:w-6 lg:h-6"
+          />
+          <img
+            src="./src/Assets/img/Notification.png"
+            alt="notification"
+            class="absolute -top-3 -right-3 block lg:hidden"
+          />
+          <img
+            src="./src/Assets/img/Notification (1).png"
+            alt="notification"
+            class="absolute -top-3 -right-3 hidden lg:block"
+          />
+        </div>
+        <img
+          src="./src/Assets/img/Menu.png"
+          alt="menu"
+          class="block lg:hidden"
+        />
+        <img
+          src="./src/Assets/img/Category Container (1).png"
+          alt="sign"
+          class="hidden lg:block"
+        />
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative pt-6 lg:pt-0">
+      <div class="flex bg-[#F3D7A4] rounded-[12px] items-center">
+        <!-- gambar FM -->
+        <div>
+          <img
+            src="./src/Assets/img/FM.png"
+            alt="FM"
+            class="lg:mt-[5px] lg:ml-[45px]"
+          />
+        </div>
+        <!-- kalimat -->
+        <div
+          class="lg:absolute flex-row w-full lg:w-auto lg:top-[93px] lg:left-[514px] lg:gap-[16px]"
+        >
+          <h1
+            class="text-[#553E32] font-bold font-SFPro text-[16px] lg:text-[56px] mb-3 lg:mb-4"
+          >
+            NEW COLLECTION
+          </h1>
+          <p
+            class="font-SFPro font-semibold text-[10px] lg:text-[24px] text-[#553E32] leading-5 mb-3 lg:mb-6"
+          >
+            Stylish men's apparel for every occasion
+          </p>
+          <button
+            class="font-semibold bg-[#0A0D12] text-[#FFFFFF] text-[10px] lg:text-[16px] font-SFPro w-[93px] h-[28] lg:w-[180px] lg:h-[48px] rounded-[6px] p-2 lg:rounded-[8px]"
+          >
+            Get Now
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
