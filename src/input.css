@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+@font-face {
+  font-family: SFpro;
+  src: url('./Assets/font/SF-Pro-Text-Regular.otf');
+}
+
+@theme {
+  --font-SFPro: 'SFpro';
+}
