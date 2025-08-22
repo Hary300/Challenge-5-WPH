@@ -1,5 +1,9 @@
 # Capstone-Shanghai---Team-H
 
+# figma link:
+
+https://www.figma.com/design/KDmhtvsydfgLMjfJu1OEoA/Ecommerce---Batch-4?node-id=29411-12622&p=f&t=9ePbne6TjEVd7mqP-0
+
 # Git Quick Start - Capstone Shanghai Team H
 
 ```bash
