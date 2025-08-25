@@ -8,78 +8,83 @@
   </head>
   <body class="p-4 lg:px-[120px]">
     <!-- 1. navbar -->
-    <nav
-      class="flex justify-between items-center gap-4 lg:gap-[80px] m-auto lg:max-w-[1440px] lg:mb-[48px] shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
-    >
-      <!-- logo -->
-      <div class="flex lg:max-w-[160px] gap-[9.19px]">
-        <img
-          src="./src/Assets/img/Logo.png"
-          alt="Logo"
-          class="w-8 lg:w-[42px]"
-        />
-        <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
-          >shirt</span
+    <nav class="-m-4 shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+      <div
+        class="p-4 flex justify-between items-center gap-4 lg:gap-[80px] lg:max-w-[1440px] lg:mb-[48px]"
+      >
+        <!-- logo -->
+        <a href="./01-home.html"
+          ><div class="flex lg:max-w-[160px] gap-[9.19px]">
+            <img
+              src="./src/Assets/img/Logo.png"
+              alt="Logo"
+              class="w-8 lg:w-[42px]"
+            />
+            <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+              >shirt</span
+            >
+          </div></a
         >
-      </div>
-      <!-- catalog dan search -->
-      <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
-        <img
-          src="./src/Assets/img/Category Container (2).png"
-          alt="Category"
-          class="block lg:hidden"
-        />
-        <img
-          src="./src/Assets/img/Category Container.png"
-          alt="Categorylg"
-          class="hidden lg:block"
-        />
-        <!-- search and mag glasses-->
-        <div class="w-full relative">
-          <img
-            src="./src/Assets/img/mg glasses.png"
-            alt="mag glasses"
-            class="absolute top-2 left-2"
-          />
-          <input
-            type="text"
-            placeholder="Search"
-            class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
-          />
+        <!-- catalog dan search -->
+        <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+          <a href="./02-catalog.html"
+            ><img
+              src="./src/Assets/img/Category Container (2).png"
+              alt="Category"
+              class="block lg:hidden" />
+            <img
+              src="./src/Assets/img/Category Container.png"
+              alt="Categorylg"
+              class="hidden lg:block"
+          /></a>
+
+          <!-- search and mag glasses-->
+          <div class="w-full relative">
+            <img
+              src="./src/Assets/img/mg glasses.png"
+              alt="mag glasses"
+              class="absolute top-2 left-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+            />
+          </div>
         </div>
-      </div>
-      <!-- shopping cart and hamburger -->
-      <div class="flex gap-[13px] items-center lg:gap-[33px]">
-        <!-- cart -->
-        <div class="flex-shrink-0 relative">
-          <img
-            src="./src/Assets/img/shopping-cart-01.png"
-            alt="cart"
-            class="lg:w-6 lg:h-6"
-          />
-          <img
-            src="./src/Assets/img/Notification.png"
-            alt="notification"
-            class="absolute -top-3 -right-3 block lg:hidden"
-          />
-          <img
-            src="./src/Assets/img/Notification (1).png"
-            alt="notification"
-            class="absolute -top-3 -right-3 hidden lg:block"
-          />
-        </div>
-        <!-- hamburger and sign in -->
-        <div>
-          <img
-            src="./src/Assets/img/Menu.png"
-            alt="menu"
-            class="block lg:hidden"
-          />
-          <img
-            src="./src/Assets/img/Category Container (1).png"
-            alt="sign"
-            class="hidden lg:block"
-          />
+        <!-- shopping cart and hamburger -->
+        <div class="flex gap-[13px] items-center lg:gap-[33px]">
+          <!-- cart -->
+          <div class="flex-shrink-0 relative">
+            <img
+              src="./src/Assets/img/shopping-cart-01.png"
+              alt="cart"
+              class="lg:w-6 lg:h-6"
+            />
+            <img
+              src="./src/Assets/img/Notification.png"
+              alt="notification"
+              class="absolute -top-3 -right-3 block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Notification (1).png"
+              alt="notification"
+              class="absolute -top-3 -right-3 hidden lg:block"
+            />
+          </div>
+          <!-- hamburger and sign in -->
+          <div>
+            <img
+              src="./src/Assets/img/Menu.png"
+              alt="menu"
+              class="block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Category Container (1).png"
+              alt="sign"
+              class="hidden lg:block"
+            />
+          </div>
         </div>
       </div>
     </nav>
@@ -123,20 +128,23 @@
     <!-- 3. Grid -->
     <section>
       <h1
-        class="font-SFPro font-bold text-[24px] mb-2 mt-2 lg:mb-[40px] lg:mt-[40px]"
+        class="font-SFPro font-bold text-[24px] lg:text-[36px] mb-2 mt-2 lg:mb-[40px] lg:mt-[40px]"
       >
         Featured Product
       </h1>
       <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <!-- product 1 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
-          <div>
-            <img
-              src="./src/Assets/img/Product Image1.png"
-              alt="Sneakers Court Minimalis"
-              class="mx-auto"
-            />
-          </div>
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
+          <a href="./03-detail.html"
+            ><div>
+              <img
+                src="./src/Assets/img/Product Image1.png"
+                alt="Sneakers Court Minimalis"
+                class="mx-auto"
+              /></div
+          ></a>
           <!-- deskripsi -->
           <div class="flex-col p-3">
             <p
@@ -154,7 +162,9 @@
         </div>
 
         <!-- product 2 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image2.png"
             alt="Kaos Crewneck Esensial"
@@ -177,7 +187,9 @@
         </div>
 
         <!-- product 3 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image3.png"
             alt="Tas Selempang Klasik"
@@ -198,8 +210,11 @@
             <img src="./src/Assets/img/rate3.png" alt="rate3" />
           </div>
         </div>
+
         <!-- product 4 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image4.png"
             alt="Kaos Soft Touch"
@@ -220,8 +235,11 @@
             <img src="./src/Assets/img/rate4.png" alt="rate4" />
           </div>
         </div>
+
         <!-- Product 5 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image5.png"
             alt="Overshirt Utility"
@@ -242,8 +260,11 @@
             <img src="./src/Assets/img/rate5.png" alt="rate5" />
           </div>
         </div>
+
         <!-- Product 6 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image6.png"
             alt="Sweater Rajut Cable"
@@ -264,8 +285,11 @@
             <img src="./src/Assets/img/rate6.png" alt="rate6" />
           </div>
         </div>
+
         <!-- Product 7 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image7.png"
             alt="Syal Wol Kotak"
@@ -286,8 +310,11 @@
             <img src="./src/Assets/img/rate7.png" alt="rate7" />
           </div>
         </div>
+
         <!-- Product 8 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image8.png"
             alt="Syal Wol Solid"
@@ -308,8 +335,11 @@
             <img src="./src/Assets/img/rate8.png" alt="rate8" />
           </div>
         </div>
+
         <!-- Product 9 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image9.png"
             alt="Celana Panjang Tailored"
@@ -331,7 +361,9 @@
           </div>
         </div>
         <!-- Product 10 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image10.png"
             alt="Sneakers Harian"
@@ -352,8 +384,11 @@
             <img src="./src/Assets/img/rate10.png" alt="rate10" />
           </div>
         </div>
+
         <!-- Product 11 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image11.png"
             alt="Jaket Puffer Quilted"
@@ -374,8 +409,11 @@
             <img src="./src/Assets/img/rate11.png" alt="rate11" />
           </div>
         </div>
+
         <!-- Product 12 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image12.png"
             alt="Kemeja Oxford"
@@ -396,8 +434,11 @@
             <img src="./src/Assets/img/rate12.png" alt="rate12" />
           </div>
         </div>
+
         <!-- Product 13 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image13.png"
             alt="Celana Pendek Chino"
@@ -418,8 +459,11 @@
             <img src="./src/Assets/img/rate13.png" alt="rate13" />
           </div>
         </div>
+
         <!-- Product 14 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image14.png"
             alt="Topi Baseball 6-Panel"
@@ -440,8 +484,11 @@
             <img src="./src/Assets/img/rate14.png" alt="rate14" />
           </div>
         </div>
+
         <!-- Product 15 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image15.png"
             alt="Kaos Katun Premium"
@@ -462,8 +509,11 @@
             <img src="./src/Assets/img/rate15.png" alt="rate15" />
           </div>
         </div>
+
         <!-- Product 16 -->
-        <div class="flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+        <div
+          class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+        >
           <img
             src="./src/Assets/img/Product Image16.png"
             alt="Hoodie Pullover Fleece"
@@ -490,7 +540,7 @@
     <!-- button load more -->
     <div class="flex justify-center mb-[48px] lg:mb-[100px]">
       <button
-        class="outline outline-[#D5D7DA] w-[160px] h-[48px] lg:w-[220px] mt-[16px] lg:mt-[40px] rounded-[12px]"
+        class="outline outline-[#D5D7DA] w-[160px] h-[48px] lg:w-[220px] mt-[16px] lg:mt-[40px] rounded-[12px] font-SFPro"
       >
         Load More
       </button>
@@ -501,14 +551,18 @@
     >
       <!-- kotak pertama -->
       <div class="lg:w-[380px]">
-        <div class="flex mb-[22px] gap-[9.19px]">
-          <img src="./src/Assets/img/Logo.png" alt="Logo" />
-          <span class="text-[24px] lg:font-bold font-SFPro items-center"
-            >shirt</span
+        <a href="./01-home.html"
+          ><div
+            class="flex mb-[22px] gap-[9.19px] w-8 h-8 lg:w-[42px] lg:h-[42px]"
           >
-        </div>
+            <img src="./src/Assets/img/Logo.png" alt="Logo" />
+            <span class="text-[24px] lg:font-bold font-SFPro items-center"
+              >shirt</span
+            >
+          </div></a
+        >
         <p
-          class="font-normal text-[12px] mb-[16px] lg:mb-[40px] leading-[28px]"
+          class="font-normal text-[14px] mb-[16px] lg:mb-[40px] leading-[28px] text-[#535862]"
         >
           Explore a realm of style with our fashion e-commerce platform, where
           shopping is effortless. Experience a smooth journey with an extensive
@@ -532,17 +586,19 @@
       </div>
       <!-- kotak kedua -->
       <div
-        class="flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
       >
-        <a href="#"><strong>E-Commerce</strong></a>
+        <a href="#" class="text-black"><strong>E-Commerce</strong></a>
         <a href="#">About Us</a>
         <a href="#">Terms & Condition</a>
         <a href="#">Privacy Policy</a>
         <a href="#">Blog</a>
       </div>
       <!-- kotak ketiga -->
-      <div class="flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]">
-        <a href="#"><strong>Help</strong></a>
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>Help</strong></a>
         <a href="#">How to Transact</a>
         <a href="#">Payment Method</a>
         <a href="#">How to Register</a>
