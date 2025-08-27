@@ -6,8 +6,609 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Catalog</title>
   </head>
-  <body>
-    <!-- let's code here -->
-    <h1 class="font-SFPro">ini adalah halaman catalog</h1>
+  <body class="p-4 lg:px-[120px]">
+    <!-- 1. navbar -->
+    <nav class="-m-4 shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+      <div
+        class="p-4 flex justify-between items-center gap-4 lg:gap-[80px] lg:max-w-[1440px] lg:mb-[48px]"
+      >
+        <!-- logo -->
+        <a href="./01-home.html"
+          ><div class="flex lg:max-w-[160px] gap-[9.19px]">
+            <img
+              src="./src/Assets/img/Logo.png"
+              alt="Logo"
+              class="w-8 lg:w-[42px]"
+            />
+            <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+              >shirt</span
+            >
+          </div></a
+        >
+        <!-- catalog dan search -->
+        <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+          <a href="./02-catalog.html"
+            ><img
+              src="./src/Assets/img/Category Container (2).png"
+              alt="Category"
+              class="block lg:hidden" />
+            <img
+              src="./src/Assets/img/Category Container.png"
+              alt="Categorylg"
+              class="hidden lg:block"
+          /></a>
+
+          <!-- search and mag glasses-->
+          <div class="w-full relative">
+            <img
+              src="./src/Assets/img/mg glasses.png"
+              alt="mag glasses"
+              class="absolute top-2 left-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+            />
+          </div>
+        </div>
+        <!-- shopping cart and hamburger -->
+        <div class="flex gap-[13px] items-center lg:gap-[33px]">
+          <!-- cart -->
+          <div class="flex-shrink-0 relative">
+            <img
+              src="./src/Assets/img/shopping-cart-01.png"
+              alt="cart"
+              class="lg:w-6 lg:h-6"
+            />
+            <img
+              src="./src/Assets/img/Notification.png"
+              alt="notification"
+              class="absolute -top-3 -right-3 block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Notification (1).png"
+              alt="notification"
+              class="absolute -top-3 -right-3 hidden lg:block"
+            />
+          </div>
+          <!-- hamburger and sign in -->
+          <div>
+            <img
+              src="./src/Assets/img/Menu.png"
+              alt="menu"
+              class="block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Category Container (1).png"
+              alt="sign"
+              class="hidden lg:block"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 2. Hero -->
+    <section class="font-SFPro mt-[24px] lg:mt-[48px]">
+      <!-- Kotak besar -->
+      <div>
+        <h1 class="font-bold text-[24px] lg:text-[32px] mb-[4px] lg:mb-[24px]">
+          Catalog
+        </h1>
+        <!-- kotak tanpa tulisan catalog -->
+        <div class="flex gap-[24px]">
+          <!-- kotak kiri-->
+          <div class="hidden lg:flex flex-col">
+            <div
+              class="border border-[#D5D7DA] rounded-[12px] divide-y divide-[1px] divide-[#D5D7DA]"
+            >
+              <!-- kotak kiri pertama -->
+              <div class="p-4 flex flex-col gap-[10px] pb-[24px]">
+                <h1 class="font-bold lg:text-[16px]">FILTER</h1>
+                <p class="font-semibold">Categories</p>
+                <label class="flex gap-1"> <input type="checkbox" />All</label>
+                <label class="flex gap-1">
+                  <input type="checkbox" />Shoes</label
+                >
+                <label class="flex gap-1">
+                  <input type="checkbox" />Clothes</label
+                >
+                <label class="flex gap-1">
+                  <input type="checkbox" />Accessories</label
+                >
+                <label class="flex gap-1">
+                  <input type="checkbox" />Accessories</label
+                >
+              </div>
+
+              <!-- kotak kiri kedua -->
+              <div class="p-4 flex flex-col gap-[10px] pb-[24px]">
+                <h1 class="font-semibold">Price</h1>
+                <div class="relative">
+                  <img
+                    src="./src/Assets/img/Rp.png"
+                    alt="rupiah"
+                    class="absolute top-1 left-1"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Minimum Price"
+                    class="outline outline-[#D5D7DA] text-[#717680] rounded-[2px] h-[48px] pl-12 py-2"
+                  />
+                </div>
+                <div class="relative">
+                  <img
+                    src="./src/Assets/img/Rp.png"
+                    alt="rupiah"
+                    class="absolute top-1 left-1"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Maximum Price"
+                    class="outline outline-[#D5D7DA] text-[#717680] rounded-[2px] h-[48px] pl-12 py-2"
+                  />
+                </div>
+              </div>
+
+              <!-- kotak kiri ketiga -->
+              <div class="p-4 flex flex-col gap-[10px] pb-[24px]">
+                <h1 class="font-semibold">Rating</h1>
+                <label class="flex gap-1">
+                  <input type="checkbox" /><img
+                    src="./src/Assets/img/Rating Star5.png"
+                    alt="Star5"
+                /></label>
+                <label class="flex gap-1">
+                  <input type="checkbox" /><img
+                    src="./src/Assets/img/Rating Star4.png"
+                    alt="Star4"
+                /></label>
+                <label class="flex gap-1">
+                  <input type="checkbox" /><img
+                    src="./src/Assets/img/Rating Star3.png"
+                    alt="Star3"
+                /></label>
+                <label class="flex gap-1">
+                  <input type="checkbox" /><img
+                    src="./src/Assets/img/Rating Star2.png"
+                    alt="Star2"
+                /></label>
+                <label class="flex gap-1">
+                  <input type="checkbox" /><img
+                    src="./src/Assets/img/Rating Star1.png"
+                    alt="Star1"
+                /></label>
+              </div>
+            </div>
+          </div>
+
+          <!-- kotak kanan -->
+          <div class="font-SFPro flex flex-col gap-6">
+            <!-- kotak kanan pertama -->
+            <div class="lg:flex lg:justify-between">
+              <div class="flex lg:p-2 items-center">
+                <h1
+                  class="text-[#414651] text-[12px] lg:text-[16px] font-light"
+                >
+                  Showing 160 products
+                </h1>
+              </div>
+              <div class="lg:flex items-center">
+                <label for="sort" class="font-bold p-2 hidden lg:block"
+                  >Sort</label
+                >
+                <div class="flex items-end gap-4 p-1">
+                  <div class="lg:hidden relative">
+                    <button
+                      class="flex items-center outline outline-[#D5D7DA] text-[#717680] w-[167px] h-[44px] lg:w-[220px] mt-[4px] lg:mt-[40px] rounded-[12px] pl-4"
+                    >
+                      Filter
+                    </button>
+                    <img
+                      src="./src/Assets/img/Filter.png"
+                      alt="Filter icon"
+                      class="absolute top-4.5 right-3"
+                    />
+                  </div>
+                  <div class="relative">
+                    <select
+                      id="sort"
+                      name="sort"
+                      class="outline outline-[#D5D7DA] text-[#717680] rounded-[12px] w-[167px] h-[44px] pl-4 py-2 appearance-none"
+                    >
+                      <option value="Latest">Latest</option>
+                      <option value="price-low">Price: Low to High</option>
+                      <option value="price-high">Price: High to Low</option>
+                    </select>
+
+                    <img
+                      src="./src/Assets/img/Arrow.png"
+                      alt="Arrow"
+                      class="absolute top-3 right-3"
+                    />
+                  </div>
+                  <!-- x -->
+                </div>
+              </div>
+            </div>
+
+            <!-- kotak kanan kedua -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+              <!-- product 1 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <a href="./03-detail.html"
+                  ><div>
+                    <img
+                      src="./src/Assets/img/Product Image1.png"
+                      alt="Sneakers Court Minimalis"
+                      class="mx-auto"
+                    /></div
+                ></a>
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Sneakers Court Minimalis
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] leading-7 lg:text-[16px]"
+                  >
+                    Rp275.000
+                  </p>
+                  <img src="./src/Assets/img/rate1.png" alt="rate1" />
+                </div>
+              </div>
+
+              <!-- product 2 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image2.png"
+                  alt="Kaos Crewneck Esensial"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Kaos Crewneck Esensial
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp800.000
+                  </p>
+                  <img src="./src/Assets/img/rate2.png" alt="rate2" />
+                </div>
+              </div>
+
+              <!-- product 3 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image3.png"
+                  alt="Tas Selempang Klasik"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Tas Selempang Klasik
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp1.600.000
+                  </p>
+                  <img src="./src/Assets/img/rate3.png" alt="rate3" />
+                </div>
+              </div>
+
+              <!-- product 4 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image4.png"
+                  alt="Kaos Soft Touch"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Kaos Soft Touch
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp650.000
+                  </p>
+                  <img src="./src/Assets/img/rate4.png" alt="rate4" />
+                </div>
+              </div>
+
+              <!-- product 5 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image5.png"
+                  alt="Overshirt Utility"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Overshirt Utility
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp375.000
+                  </p>
+                  <img src="./src/Assets/img/rate5.png" alt="rate5" />
+                </div>
+              </div>
+
+              <!-- product 6 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image6.png"
+                  alt="Sweater Rajut Cable"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Sweater Rajut Cable
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp1.300.000
+                  </p>
+                  <img src="./src/Assets/img/rate6.png" alt="rate6" />
+                </div>
+              </div>
+
+              <!-- product 7 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image7.png"
+                  alt="Syal Wol Kotak"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Syal Wol Kotak
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp220.000
+                  </p>
+                  <img src="./src/Assets/img/rate7.png" alt="rate7" />
+                </div>
+              </div>
+
+              <!-- product 8 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image8.png"
+                  alt="Syal Wol Solid"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Syal Wol Solid
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp180.000
+                  </p>
+                  <img src="./src/Assets/img/rate8.png" alt="rate8" />
+                </div>
+              </div>
+
+              <!-- product 9 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image9.png"
+                  alt="Celana Panjang Tailored"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Celana Panjang Tailored
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp2.200.000
+                  </p>
+                  <img src="./src/Assets/img/rate9.png" alt="rate9" />
+                </div>
+              </div>
+
+              <!-- product 10 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image10.png"
+                  alt="Sneakers Harian"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Sneakers Harian
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp1.900.000
+                  </p>
+                  <img src="./src/Assets/img/rate10.png" alt="rate10" />
+                </div>
+              </div>
+
+              <!-- product 11 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image11.png"
+                  alt="Jaket Puffer Quilted"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Jaket Puffer Quilted
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp450.000
+                  </p>
+                  <img src="./src/Assets/img/rate11.png" alt="rate11" />
+                </div>
+              </div>
+
+              <!-- product 12 -->
+              <div
+                class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+              >
+                <img
+                  src="./src/Assets/img/Product Image12.png"
+                  alt="Kemeja Oxford"
+                  class="mx-auto"
+                />
+                <!-- deskripsi -->
+                <div class="flex-col p-3">
+                  <p
+                    class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Kemeja Oxford
+                  </p>
+                  <p
+                    class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+                  >
+                    Rp950.000
+                  </p>
+                  <img src="./src/Assets/img/rate12.png" alt="rate12" />
+                </div>
+              </div>
+              <!-- x -->
+            </div>
+            <!-- kotak kanan ketiga button load more -->
+            <div class="flex justify-center mb-[48px] lg:mb-[100px]">
+              <button
+                class="outline outline-[#D5D7DA] w-[160px] h-[48px] lg:w-[220px] rounded-[12px] font-SFPro"
+              >
+                Load More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- x -->
+    </section>
+    <!-- 3. Footer -->
+    <footer
+      class="lg:flex font-SFPro border-t border-[#D5D7DA] lg:py-[80px] py-[40px] lg:gap-[180px]"
+    >
+      <!-- kotak pertama -->
+      <div class="lg:w-[380px]">
+        <a href="./01-home.html"
+          ><div
+            class="flex mb-[22px] gap-[9.19px] w-8 h-8 lg:w-[42px] lg:h-[42px]"
+          >
+            <img src="./src/Assets/img/Logo.png" alt="Logo" />
+            <span class="text-[24px] lg:font-bold font-SFPro items-center"
+              >shirt</span
+            >
+          </div></a
+        >
+        <p
+          class="font-normal text-[14px] mb-[16px] lg:mb-[40px] leading-[28px] text-[#535862]"
+        >
+          Explore a realm of style with our fashion e-commerce platform, where
+          shopping is effortless. Experience a smooth journey with an extensive
+          selection of trendy apparel, all delivered directly to your home.
+        </p>
+        <p class="font-bold text-[14px] mb-[20px]">Follow on Social Media</p>
+        <div class="flex mb-[16px]">
+          <a href="http://www.facebook.com"
+            ><img src="./src/Assets/img/FB.png" alt="Facebook"
+          /></a>
+          <a href="http://www.instagram.com"
+            ><img src="./src/Assets/img/IG.png" alt="Instagram"
+          /></a>
+          <a href="http://www.linkedin.com"
+            ><img src="./src/Assets/img/IN.png" alt="Linkedin"
+          /></a>
+          <a href="http://www.tiktok.com"
+            ><img src="./src/Assets/img/TT.png" alt="Tiktok"
+          /></a>
+        </div>
+      </div>
+      <!-- kotak kedua -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>E-Commerce</strong></a>
+        <a href="#">About Us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Blog</a>
+      </div>
+      <!-- kotak ketiga -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>Help</strong></a>
+        <a href="#">How to Transact</a>
+        <a href="#">Payment Method</a>
+        <a href="#">How to Register</a>
+      </div>
+    </footer>
   </body>
 </html>
