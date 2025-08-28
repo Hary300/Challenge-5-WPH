@@ -6,8 +6,368 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Detail</title>
   </head>
-  <body>
-    <!-- let's code here -->
-    <h1 class="font-SFPro">ini adalah halaman detail</h1>
+  <body class="p-4 lg:px-[120px]">
+    <!-- 1. navbar -->
+    <nav class="-m-4 shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+      <div
+        class="p-4 flex justify-between items-center gap-4 lg:gap-[80px] lg:max-w-[1440px] lg:mb-[48px]"
+      >
+        <!-- logo -->
+        <a href="./01-home.html"
+          ><div class="flex lg:max-w-[160px] gap-[9.19px]">
+            <img
+              src="./src/Assets/img/Logo.png"
+              alt="Logo"
+              class="w-8 lg:w-[42px]"
+            />
+            <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+              >shirt</span
+            >
+          </div></a
+        >
+        <!-- catalog dan search -->
+        <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+          <a href="./02-catalog.html"
+            ><img
+              src="./src/Assets/img/Category Container (2).png"
+              alt="Category"
+              class="block lg:hidden" />
+            <img
+              src="./src/Assets/img/Category Container.png"
+              alt="Categorylg"
+              class="hidden lg:block"
+          /></a>
+
+          <!-- search and mag glasses-->
+          <div class="w-full relative">
+            <img
+              src="./src/Assets/img/mg glasses.png"
+              alt="mag glasses"
+              class="absolute top-2 left-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+            />
+          </div>
+        </div>
+        <!-- shopping cart and hamburger -->
+        <div class="flex gap-[13px] items-center lg:gap-[33px]">
+          <!-- cart -->
+          <div class="flex-shrink-0 relative">
+            <img
+              src="./src/Assets/img/shopping-cart-01.png"
+              alt="cart"
+              class="lg:w-6 lg:h-6"
+            />
+            <img
+              src="./src/Assets/img/Notification.png"
+              alt="notification"
+              class="absolute -top-3 -right-3 block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Notification (1).png"
+              alt="notification"
+              class="absolute -top-3 -right-3 hidden lg:block"
+            />
+          </div>
+          <!-- hamburger and sign in -->
+          <div>
+            <img
+              src="./src/Assets/img/Menu.png"
+              alt="menu"
+              class="block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Category Container (1).png"
+              alt="sign"
+              class="hidden lg:block"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 2. Hero -->
+    <!-- kotak hero besar 1 -->
+    <div
+      class="font-SFPro text-[12px] lg:text-[16px] text-[#0A0D12] mt-[24px] lg:mt-[48px]"
+      aria-label="Breadcrumb"
+    >
+      <ul class="flex">
+        <li>
+          <a href="./01-home.html" class="font-semibold">Home</a
+          ><span class="mx-1 lg:mx-3">></span>
+        </li>
+        <li>
+          <a href="./03-detail.html" class="font-semibold">Detail</a
+          ><span class="mx-1 lg:mx-3">></span>
+        </li>
+        <li>
+          <p class="font-light">Sneakers Court Minimalis</p>
+        </li>
+      </ul>
+    </div>
+    <!-- kotak hero besar (khb) 2 -->
+    <section
+      class="flex flex-col lg:flex-row mt-[8px] lg:mt-[24px] font-SFPro lg:gap-7 border-b border-[#D5D7DA]"
+    >
+      <!-- khb 2 kiri -->
+      <div class="flex-shrink-0">
+        <img
+          src="./src/Assets/img/Sneakers detail.png"
+          alt="Sneakers detail"
+          class="mb-[16px]"
+        />
+      </div>
+      <!-- khb 2 kanan -->
+      <div class="flex flex-col divide-y divide-[1px] divide-[#D5D7DA]">
+        <!-- kotak 1 -->
+        <div class="gap-8">
+          <p class="text-[20px] font-semibold">Sneakers Court Minimalis</p>
+          <h1 class="text-[32px] font-bold">Rp275.000</h1>
+          <img
+            src="./src/Assets/img/rate1.png"
+            alt="rate1"
+            class="w-[53px] mb-[16px]"
+          />
+        </div>
+        <!-- kotak 2 -->
+        <div class="flex flex-col mt-[16px] gap-4">
+          <div class="flex text-center">
+            <p
+              class="flex-1 lg:flex-none border-b-4 border-[#0A0D12] p-2 font-semibold lg:w-[140px]"
+            >
+              Deskripsi
+            </p>
+            <p
+              class="flex-1 lg:flex-none border-b-1 border-[#D5D7DA] p-2 font-normal lg:w-[140px]"
+            >
+              Spesifikasi
+            </p>
+          </div>
+          <div>
+            <p>
+              Sneakers Court Minimalis - Ivory Beige <br />Sepatu sneakers
+              bergaya minimalis dengan kombinasi warna ivory dan beige yang
+              elegan. Terbuat dari material kulit sintetis berkualitas dengan
+              sentuhan suede halus di bagian panel samping dan depan.
+            </p>
+            <br />
+
+            <ul class="list-disc pl-5 space-y-2 mb-[16px]">
+              <li>Desain: Low-top dengan siluet klasik yang timeless</li>
+              <li>Material: Kulit sintetis premium + suede sintetis</li>
+              <li>
+                Sol: Outsole karet anti-slip dengan warna natural gum untuk daya
+                cengkeram yang baik
+              </li>
+              <li>
+                Kenyamanan: Insole empuk dengan bantalan ekstra untuk pemakaian
+                sehari-hari
+              </li>
+              <li>Warna: Ivory Beige</li>
+              <li>
+                Gaya: Cocok untuk casual look, street style, maupun semi-formal
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- kotak 3 -->
+        <div class="mt-[16px] font-SFPro">
+          <!-- quantity -->
+          <div class="flex items-center gap-4">
+            <label>Quantity</label>
+            <div
+              class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+            >
+              <span class="text-2xl">-</span>
+              <span>2</span>
+              <span>+</span>
+            </div>
+          </div>
+
+          <!-- button + add cart -->
+          <a href="./04-cart.html"
+            ><button
+              class="rounded-[8px] mt-[16px] bg-[#0A0D12] text-[#FFFFFF] p-2 w-full h-[48px] lg:w-[312px] mb-[24px] lg:mb-[48px]"
+            >
+              + Add to Cart
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- 3. related product -->
+    <section
+      class="flex flex-col font-SFPro mt-[24px] lg:mt-[48px] mb-[48px] lg:mb-[100px]"
+    >
+      <div>
+        <h1 class="text-[24px] lg:text-[32px] font-bold mb-[16px] lg:mb-[24px]">
+          Related Product
+        </h1>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <!-- Product 5 -->
+          <div
+            class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+          >
+            <img
+              src="./src/Assets/img/Product Image5.png"
+              alt="Overshirt Utility"
+              class="mx-auto"
+            />
+            <!-- deskripsi -->
+            <div class="flex-col p-3">
+              <p
+                class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+              >
+                Overshirt Utility
+              </p>
+              <p
+                class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+              >
+                Rp375.000
+              </p>
+              <img src="./src/Assets/img/rate5.png" alt="rate5" />
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+          >
+            <img
+              src="./src/Assets/img/Product Image6.png"
+              alt="Sweater Rajut Cable"
+              class="mx-auto"
+            />
+            <!-- deskripsi -->
+            <div class="flex-col p-3">
+              <p
+                class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+              >
+                Sweater Rajut Cable
+              </p>
+              <p
+                class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+              >
+                Rp1.300.000
+              </p>
+              <img src="./src/Assets/img/rate6.png" alt="rate6" />
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div
+            class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+          >
+            <img
+              src="./src/Assets/img/Product Image7.png"
+              alt="Syal Wol Kotak"
+              class="mx-auto"
+            />
+            <!-- deskripsi -->
+            <div class="flex-col p-3">
+              <p
+                class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+              >
+                Syal Wol Kotak
+              </p>
+              <p
+                class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+              >
+                Rp220.000
+              </p>
+              <img src="./src/Assets/img/rate7.png" alt="rate7" />
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div
+            class="rounded-[12px] flex-col shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+          >
+            <img
+              src="./src/Assets/img/Product Image8.png"
+              alt="Syal Wol Solid"
+              class="mx-auto"
+            />
+            <!-- deskripsi -->
+            <div class="flex-col p-3">
+              <p
+                class="font-SFPro font-normal text-[14px] lg:text-[16px] leading-7"
+              >
+                Syal Wol Solid
+              </p>
+              <p
+                class="font-SFPro font-bold text-[14px] lg:text-[16px] leading-7"
+              >
+                Rp180.000
+              </p>
+              <img src="./src/Assets/img/rate8.png" alt="rate8" />
+            </div>
+          </div>
+          <!-- x -->
+        </div>
+      </div>
+    </section>
+    <!-- 4. footer -->
+    <footer
+      class="lg:flex font-SFPro border-t border-[#D5D7DA] lg:py-[80px] py-[40px] lg:gap-[180px]"
+    >
+      <!-- kotak pertama -->
+      <div class="lg:w-[380px]">
+        <a href="./01-home.html"
+          ><div
+            class="flex mb-[22px] gap-[9.19px] w-8 h-8 lg:w-[42px] lg:h-[42px]"
+          >
+            <img src="./src/Assets/img/Logo.png" alt="Logo" />
+            <span class="text-[24px] lg:font-bold font-SFPro items-center"
+              >shirt</span
+            >
+          </div></a
+        >
+        <p
+          class="font-normal text-[14px] mb-[16px] lg:mb-[40px] leading-[28px] text-[#535862]"
+        >
+          Explore a realm of style with our fashion e-commerce platform, where
+          shopping is effortless. Experience a smooth journey with an extensive
+          selection of trendy apparel, all delivered directly to your home.
+        </p>
+        <p class="font-bold text-[14px] mb-[20px]">Follow on Social Media</p>
+        <div class="flex mb-[16px]">
+          <a href="http://www.facebook.com"
+            ><img src="./src/Assets/img/FB.png" alt="Facebook"
+          /></a>
+          <a href="http://www.instagram.com"
+            ><img src="./src/Assets/img/IG.png" alt="Instagram"
+          /></a>
+          <a href="http://www.linkedin.com"
+            ><img src="./src/Assets/img/IN.png" alt="Linkedin"
+          /></a>
+          <a href="http://www.tiktok.com"
+            ><img src="./src/Assets/img/TT.png" alt="Tiktok"
+          /></a>
+        </div>
+      </div>
+      <!-- kotak kedua -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>E-Commerce</strong></a>
+        <a href="#">About Us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Blog</a>
+      </div>
+      <!-- kotak ketiga -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>Help</strong></a>
+        <a href="#">How to Transact</a>
+        <a href="#">Payment Method</a>
+        <a href="#">How to Register</a>
+      </div>
+    </footer>
   </body>
 </html>

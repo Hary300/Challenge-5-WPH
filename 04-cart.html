@@ -6,8 +6,393 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Cart</title>
   </head>
-  <body>
-    <!-- let's code here -->
-    <h1 class="font-SFPro">ini adalah halaman cart</h1>
+  <body class="font-SFPro p-4 lg:px-[120px]">
+    <!-- 1. navbar -->
+    <nav class="-m-4 shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+      <div
+        class="p-4 flex justify-between items-center gap-4 lg:gap-[80px] lg:max-w-[1440px] lg:mb-[48px]"
+      >
+        <!-- logo -->
+        <a href="./01-home.html"
+          ><div class="flex lg:max-w-[160px] gap-[9.19px]">
+            <img
+              src="./src/Assets/img/Logo.png"
+              alt="Logo"
+              class="w-8 lg:w-[42px]"
+            />
+            <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+              >shirt</span
+            >
+          </div></a
+        >
+        <!-- catalog dan search -->
+        <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+          <a href="./02-catalog.html"
+            ><img
+              src="./src/Assets/img/Category Container (2).png"
+              alt="Category"
+              class="block lg:hidden" />
+            <img
+              src="./src/Assets/img/Category Container.png"
+              alt="Categorylg"
+              class="hidden lg:block"
+          /></a>
+
+          <!-- search and mag glasses-->
+          <div class="w-full relative">
+            <img
+              src="./src/Assets/img/mg glasses.png"
+              alt="mag glasses"
+              class="absolute top-2 left-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+            />
+          </div>
+        </div>
+        <!-- shopping cart and hamburger -->
+        <div class="flex gap-[13px] items-center lg:gap-[33px]">
+          <!-- cart -->
+          <div class="flex-shrink-0 relative">
+            <img
+              src="./src/Assets/img/shopping-cart-01.png"
+              alt="cart"
+              class="lg:w-6 lg:h-6"
+            />
+            <img
+              src="./src/Assets/img/Notification.png"
+              alt="notification"
+              class="absolute -top-3 -right-3 block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Notification (1).png"
+              alt="notification"
+              class="absolute -top-3 -right-3 hidden lg:block"
+            />
+          </div>
+          <!-- hamburger and sign in -->
+          <div>
+            <img
+              src="./src/Assets/img/Menu.png"
+              alt="menu"
+              class="block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Category Container (1).png"
+              alt="sign"
+              class="hidden lg:block"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      class="flex flex-col lg:flex-row lg:justify-between mt-[24px] lg:mt-[48px] lg:gap-10 lg:mb-[100px]"
+    >
+      <!-- kotak kiri (kk) -->
+      <div class="flex flex-col gap-[16px] lg:gap-[24px] w-full">
+        <h1 class="font-bold text-[24px] lg:text-[32px]">Cart</h1>
+        <!-- kk checkbox -->
+        <div class="flex flex-col gap-[16px] lg:gap-[24px]">
+          <label class="flex gap-3"> <input type="checkbox" />Select All</label>
+          <!-- product 1 -->
+          <div
+            class="flex flex-col lg:flex-row justify-between border-b border-[#D5D7DA]"
+          >
+            <!-- kotak 1 -->
+            <label class="flex gap-3 items-start">
+              <input type="checkbox" />
+              <!-- Gambar -->
+              <img
+                src="./src/Assets/img/Product Image1.png"
+                alt="Sneakers Court Minimalis"
+                class="w-[80px] h-[80px]"
+              />
+              <!-- tulisan -->
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[14px] lg:text-[18px]">
+                  Sneakers Court Minimalis
+                </h1>
+                <p class="text-[#535862] text-[12px] lg:text-[16px]">Shoes</p>
+              </div></label
+            >
+            <!-- kotak 2 -->
+            <div
+              class="flex items-center lg:items-end lg:flex-col gap-4 pl-7 justify-between"
+            >
+              <h1 class="font-bold text-[14px] lg:text-[20px]">Rp275.000</h1>
+              <div
+                class="flex justify-between items-center gap-4 mb-[16px] lg:mb-[24px]"
+              >
+                <div>
+                  <img src="./src/Assets/img/Trash.png" alt="" />
+                </div>
+                <div
+                  class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+                >
+                  <span class="text-2xl">-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- product 2 -->
+          <div
+            class="flex flex-col lg:flex-row justify-between border-b border-[#D5D7DA]"
+          >
+            <!-- kotak 1 -->
+            <label class="flex gap-3 items-start">
+              <input type="checkbox" />
+              <!-- Gambar -->
+              <img
+                src="./src/Assets/img/Product Image15.png"
+                alt="Kaos Katun Premium"
+                class="w-[80px] h-[80px]"
+              />
+              <!-- tulisan -->
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[14px] lg:text-[18px]">
+                  Kaos Katun Premium
+                </h1>
+                <p class="text-[#535862] text-[12px] lg:text-[16px]">T-Shirt</p>
+              </div></label
+            >
+            <!-- kotak 2 -->
+            <div
+              class="flex items-center lg:items-end lg:flex-col gap-4 pl-7 justify-between"
+            >
+              <h1 class="font-bold text-[14px] lg:text-[20px]">Rp1.100.000</h1>
+              <div
+                class="flex justify-between items-center gap-4 mb-[16px] lg:mb-[24px]"
+              >
+                <div>
+                  <img src="./src/Assets/img/Trash.png" alt="" />
+                </div>
+                <div
+                  class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+                >
+                  <span class="text-2xl">-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product 3 -->
+          <div
+            class="flex flex-col lg:flex-row justify-between border-b border-[#D5D7DA]"
+          >
+            <!-- kotak 1 -->
+            <label class="flex gap-3 items-start">
+              <input type="checkbox" />
+              <!-- Gambar -->
+              <img
+                src="./src/Assets/img/Product Image14.png"
+                alt="Topi Baseball 6-Panel"
+                class="w-[80px] h-[80px]"
+              />
+              <!-- tulisan -->
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[14px] lg:text-[18px]">
+                  Topi Baseball 6-Panel
+                </h1>
+                <p class="text-[#535862] text-[12px] lg:text-[16px]">
+                  Accessories
+                </p>
+              </div></label
+            >
+            <!-- kotak 2 -->
+            <div
+              class="flex items-center lg:items-end lg:flex-col gap-4 pl-7 justify-between"
+            >
+              <h1 class="font-bold text-[14px] lg:text-[20px]">Rp320.000</h1>
+              <div
+                class="flex justify-between items-center gap-4 mb-[16px] lg:mb-[24px]"
+              >
+                <div>
+                  <img src="./src/Assets/img/Trash.png" alt="" />
+                </div>
+                <div
+                  class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+                >
+                  <span class="text-2xl">-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product 4 -->
+          <div
+            class="flex flex-col lg:flex-row justify-between border-b border-[#D5D7DA]"
+          >
+            <!-- kotak 1 -->
+            <label class="flex gap-3 items-start">
+              <input type="checkbox" />
+              <!-- Gambar -->
+              <img
+                src="./src/Assets/img/Product Image9.png"
+                alt="Celana Panjang Tailored"
+                class="w-[80px] h-[80px]"
+              />
+              <!-- tulisan -->
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[14px] lg:text-[18px]">
+                  Celana Panjang Tailored
+                </h1>
+                <p class="text-[#535862] text-[12px] lg:text-[16px]">
+                  Trousers
+                </p>
+              </div></label
+            >
+            <!-- kotak 2 -->
+            <div
+              class="flex items-center lg:items-end lg:flex-col gap-4 pl-7 justify-between"
+            >
+              <h1 class="font-bold text-[14px] lg:text-[20px]">Rp2.200.000</h1>
+              <div
+                class="flex justify-between items-center gap-4 mb-[16px] lg:mb-[24px]"
+              >
+                <div>
+                  <img src="./src/Assets/img/Trash.png" alt="" />
+                </div>
+                <div
+                  class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+                >
+                  <span class="text-2xl">-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- product 5 -->
+          <div class="flex flex-col lg:flex-row justify-between">
+            <!-- kotak 1 -->
+            <label class="flex gap-3 items-start">
+              <input type="checkbox" />
+              <!-- Gambar -->
+              <img
+                src="./src/Assets/img/Product Image16.png"
+                alt="Hoodie Pullover Fleece"
+                class="w-[80px] h-[80px]"
+              />
+              <!-- tulisan -->
+              <div class="flex flex-col gap-1">
+                <h1 class="font-bold text-[14px] lg:text-[18px]">
+                  Hoodie Pullover Fleece
+                </h1>
+                <p class="text-[#535862] text-[12px] lg:text-[16px]">Shoes</p>
+              </div></label
+            >
+            <!-- kotak 2 -->
+            <div
+              class="flex items-center lg:items-end lg:flex-col gap-4 pl-7 justify-between"
+            >
+              <h1 class="font-bold text-[14px] lg:text-[20px]">Rp275.000</h1>
+              <div
+                class="flex justify-between items-center gap-4 mb-[16px] lg:mb-[24px]"
+              >
+                <div>
+                  <img src="./src/Assets/img/Trash.png" alt="" />
+                </div>
+                <div
+                  class="flex justify-around border border-[#D5D7DA] rounded-[12px] w-[80px] h-[40px] items-center"
+                >
+                  <span class="text-2xl">-</span>
+                  <span>2</span>
+                  <span>+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- x -->
+        </div>
+      </div>
+      <!-- kotak kanan -->
+      <div class="flex flex-col font-SFPro">
+        <div
+          class="p-5 shadow-[0_0_20px_0_rgba(203,202,202,0.25)] rounded-[12px] mb-10"
+        >
+          <h1 class="font-bold text-[18px] lg:text-[20px]">Total Shopping</h1>
+          <div class="flex justify-between">
+            <p>Total</p>
+            <p>Rp275.000</p>
+          </div>
+          <a href="./05-checkout.html"
+            ><button
+              class="rounded-[8px] mt-[16px] bg-[#0A0D12] text-[#FFFFFF] p-2 w-full h-[48px] lg:w-[312px]"
+            >
+              Checkout
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer
+      class="lg:flex font-SFPro border-t border-[#D5D7DA] lg:py-[80px] py-[40px] lg:gap-[180px]"
+    >
+      <!-- kotak pertama -->
+      <div class="lg:w-[380px]">
+        <a href="./01-home.html"
+          ><div
+            class="flex mb-[22px] gap-[9.19px] w-8 h-8 lg:w-[42px] lg:h-[42px]"
+          >
+            <img src="./src/Assets/img/Logo.png" alt="Logo" />
+            <span class="text-[24px] lg:font-bold font-SFPro items-center"
+              >shirt</span
+            >
+          </div></a
+        >
+        <p
+          class="font-normal text-[14px] mb-[16px] lg:mb-[40px] leading-[28px] text-[#535862]"
+        >
+          Explore a realm of style with our fashion e-commerce platform, where
+          shopping is effortless. Experience a smooth journey with an extensive
+          selection of trendy apparel, all delivered directly to your home.
+        </p>
+        <p class="font-bold text-[14px] mb-[20px]">Follow on Social Media</p>
+        <div class="flex mb-[16px]">
+          <a href="http://www.facebook.com"
+            ><img src="./src/Assets/img/FB.png" alt="Facebook"
+          /></a>
+          <a href="http://www.instagram.com"
+            ><img src="./src/Assets/img/IG.png" alt="Instagram"
+          /></a>
+          <a href="http://www.linkedin.com"
+            ><img src="./src/Assets/img/IN.png" alt="Linkedin"
+          /></a>
+          <a href="http://www.tiktok.com"
+            ><img src="./src/Assets/img/TT.png" alt="Tiktok"
+          /></a>
+        </div>
+      </div>
+      <!-- kotak kedua -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>E-Commerce</strong></a>
+        <a href="#">About Us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Blog</a>
+      </div>
+      <!-- kotak ketiga -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>Help</strong></a>
+        <a href="#">How to Transact</a>
+        <a href="#">Payment Method</a>
+        <a href="#">How to Register</a>
+      </div>
+    </footer>
   </body>
 </html>

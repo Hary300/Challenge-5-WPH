@@ -6,8 +6,384 @@
     <link rel="stylesheet" href="./src/output.css" />
     <title>Checkout</title>
   </head>
-  <body>
-    <!-- let's code here -->
-    <h1 class="font-SFPro">ini adalah halaman checkout</h1>
+  <body class="font-SFPro p-4 lg:px-[120px]">
+    <!-- 1. navbar -->
+    <nav class="-m-4 shadow-[0_0_20px_0_rgba(203,202,202,0.25)]">
+      <div
+        class="p-4 flex justify-between items-center gap-4 lg:gap-[80px] lg:max-w-[1440px] lg:mb-[48px]"
+      >
+        <!-- logo -->
+        <a href="./01-home.html"
+          ><div class="flex lg:max-w-[160px] gap-[9.19px]">
+            <img
+              src="./src/Assets/img/Logo.png"
+              alt="Logo"
+              class="w-8 lg:w-[42px]"
+            />
+            <span class="hidden lg:block lg:text-[24px] lg:font-bold font-SFPro"
+              >shirt</span
+            >
+          </div></a
+        >
+        <!-- catalog dan search -->
+        <div class="flex gap-1 lg:gap-3 w-[236px] lg:w-[623px]">
+          <a href="./02-catalog.html"
+            ><img
+              src="./src/Assets/img/Category Container (2).png"
+              alt="Category"
+              class="block lg:hidden" />
+            <img
+              src="./src/Assets/img/Category Container.png"
+              alt="Categorylg"
+              class="hidden lg:block"
+          /></a>
+
+          <!-- search and mag glasses-->
+          <div class="w-full relative">
+            <img
+              src="./src/Assets/img/mg glasses.png"
+              alt="mag glasses"
+              class="absolute top-2 left-2"
+            />
+            <input
+              type="text"
+              placeholder="Search"
+              class="outline outline-[#D5D7DA] text-gray-700 rounded-[12px] pl-9 py-2 w-full"
+            />
+          </div>
+        </div>
+        <!-- shopping cart and hamburger -->
+        <div class="flex gap-[13px] items-center lg:gap-[33px]">
+          <!-- cart -->
+          <div class="flex-shrink-0 relative">
+            <img
+              src="./src/Assets/img/shopping-cart-01.png"
+              alt="cart"
+              class="lg:w-6 lg:h-6"
+            />
+            <img
+              src="./src/Assets/img/Notification.png"
+              alt="notification"
+              class="absolute -top-3 -right-3 block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Notification (1).png"
+              alt="notification"
+              class="absolute -top-3 -right-3 hidden lg:block"
+            />
+          </div>
+          <!-- hamburger and sign in -->
+          <div>
+            <img
+              src="./src/Assets/img/Menu.png"
+              alt="menu"
+              class="block lg:hidden"
+            />
+            <img
+              src="./src/Assets/img/Category Container (1).png"
+              alt="sign"
+              class="hidden lg:block"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- 2. Hero -->
+    <section class="font-SFPro mt-[24px] lg:mt-[48px]">
+      <!-- Kotak besar -->
+      <div>
+        <h1 class="font-bold text-[24px] pb-2 lg:text-[32px] lg:mb-[24px]">
+          Checkout
+        </h1>
+      </div>
+      <!-- kotak besar tanpa tulisan Checkout -->
+      <div
+        class="flex flex-col lg:flex-row justify-between gap-8 mb-4 lg:mb-[100px]"
+      >
+        <!-- kotak kiri -->
+        <div
+          class="rounded-[12px] shadow-[0_0_20px_0_rgba(203,202,202,0.25)] divide-y divide-[1px] divide-[#D5D7DA] w-full"
+        >
+          <!-- shipping Address -->
+          <div class="flex flex-col p-5 gap-3">
+            <h1 class="font-bold text-[16px] lg:text-[18px]">
+              Shipping Address
+            </h1>
+
+            <form class="flex flex-col gap-3">
+              <input
+                type="text"
+                placeholder="Name"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px]"
+              />
+              <input
+                type="text"
+                placeholder="Phone Number"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px]"
+              />
+              <input
+                type="text"
+                placeholder="City"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px]"
+              />
+              <input
+                type="text"
+                placeholder="Postal Code"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px]"
+              />
+              <textarea
+                placeholder="Address"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px] h-[123px]"
+              ></textarea>
+            </form>
+          </div>
+
+          <!-- Shipping Method -->
+          <div class="flex flex-col p-5 gap-3">
+            <h1 class="font-bold text-[16px] lg:text-[18px]">
+              Shipping Method
+            </h1>
+            <div class="relative">
+              <input
+                type="text"
+                placeholder="Select Shipping"
+                class="py-2 px-3 border border-[#D5D7DA] rounded-[8px] text-[14px] lg:text-[16px] w-full"
+              />
+              <img
+                src="./src/Assets/img/Arrow.png"
+                alt="Arrow"
+                class="absolute right-3 top-3"
+              />
+            </div>
+          </div>
+
+          <!-- product -->
+          <div class="flex flex-col pt-5 px-5">
+            <div>
+              <h1 class="font-bold text-[16px] lg:text-[18px]">Product</h1>
+            </div>
+
+            <div class="flex pt-4 gap-3">
+              <div class="flex-shrink-0 w-[80px] h-[80px] mb-[20px]">
+                <!-- Gambar -->
+                <img
+                  src="./src/Assets/img/Product Image15.png"
+                  alt="Kaos Katun Premium"
+                />
+              </div>
+              <!-- kotak kedua -->
+              <div class="w-full">
+                <div class="flex flex-col lg:justify-between lg:flex-row">
+                  <!-- tulisan -->
+                  <div class="flex flex-col gap-1">
+                    <h1 class="font-bold text-[14px] lg:text-[18px]">
+                      Kaos Katun Premium
+                    </h1>
+                    <p class="text-[#535862] text-[12px] lg:text-[16px]">
+                      T-Shirt
+                    </p>
+                  </div>
+                  <!-- kotak 2 -->
+                  <div class="flex lg:items-center lg:pl-7">
+                    <h1 class="font-bold text-[14px] lg:text-[20px]">
+                      1 X Rp1.100.000
+                    </h1>
+                  </div>
+                  <!-- x -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kotak kanan -->
+        <div>
+          <div
+            class="rounded-[12px] shadow-[0_0_20px_0_rgba(203,202,202,0.25)]"
+          >
+            <!-- Payment method -->
+            <div>
+              <h1 class="px-5 pt-5 pb-4 font-bold text-[16px] lg:text-[18px]">
+                Payment Method
+              </h1>
+            </div>
+            <!-- bank 1 -->
+            <div class="px-5">
+              <div class="border-b border-[#D5D7DA]">
+                <div class="flex justify-between">
+                  <div class="flex items-center gap-5 mb-[12px] lg:mb-[16px]">
+                    <img
+                      src="./src/Assets/img/BNI.png"
+                      alt="BNI"
+                      class=""
+                    /><span class="lg:w-[269px]">BNI Virtual Account</span>
+                  </div>
+                  <div class="flex items-center">
+                    <input type="radio" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bank 2 -->
+            <div class="px-5">
+              <div class="border-b border-[#D5D7DA]">
+                <div
+                  class="flex justify-between mt-[12px] mb-[12px] lg:mb-[16px] lg:mt-[16px]"
+                >
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="./src/Assets/img/BRI.png"
+                      alt="BRI"
+                      class=""
+                    /><span class="lg:w-[269px]">BRI Virtual Account</span>
+                  </div>
+                  <div class="flex items-center">
+                    <input type="radio" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bank 3 -->
+            <div class="px-5">
+              <div class="border-b border-[#D5D7DA]">
+                <div
+                  class="flex justify-between mt-[12px] mb-[12px] lg:mb-[16px] lg:mt-[16px]"
+                >
+                  <div class="flex items-center gap-5">
+                    <img
+                      src="./src/Assets/img/BCA.png"
+                      alt="BCA"
+                      class=""
+                    /><span class="lg:w-[269px]">BCA Virtual Account</span>
+                  </div>
+                  <div class="flex items-center">
+                    <input type="radio" class="w-6 h-6" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- bank 4 -->
+            <div class="px-5 border-b border-[#D5D7DA]">
+              <div
+                class="flex justify-between mt-[12px] mb-[12px] lg:mb-[16px] lg:mt-[16px]"
+              >
+                <div class="flex items-center gap-5">
+                  <img
+                    src="./src/Assets/img/MANDIRI.png"
+                    alt="MANDIRI"
+                    class=""
+                  /><span class="lg:w-[269px]">MANDIRI Virtual Account</span>
+                </div>
+                <div class="flex items-center">
+                  <input type="radio" class="w-6 h-6" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Payment summary -->
+            <div class="p-5 font-SFPro">
+              <h1
+                class="font-bold text-[16px] lg:text-[18px] mb-[12px] lg:mb-[16px]"
+              >
+                Payment Summary
+              </h1>
+              <!-- total price -->
+              <div class="flex justify-between">
+                <p
+                  class="mb-[12px] lg:mb-[16px] font-normal text-[14px] lg:text-[16px]"
+                >
+                  Total Price of Goods
+                </p>
+                <p class="font-bold">Rp1.100.000</p>
+              </div>
+              <!-- shipping cost -->
+              <div class="flex justify-between">
+                <p
+                  class="mb-[12px] lg:mb-[16px] font-normal text-[14px] lg:text-[16px]"
+                >
+                  Shipping cost
+                </p>
+                <p class="font-bold">Rp10.000</p>
+              </div>
+              <!-- total  -->
+              <div class="flex justify-between">
+                <p
+                  class="mb-[12px] lg:mb-[16px] font-bold text-[14px] lg:text-[16px]"
+                >
+                  Total
+                </p>
+                <p class="font-bold">Rp1.110.000</p>
+              </div>
+              <!-- button -->
+
+              <button
+                class="rounded-[8px] mt-[16px] bg-[#0A0D12] text-[#FFFFFF] p-2 w-full"
+              >
+                Pay now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3. footer -->
+    <footer
+      class="lg:flex font-SFPro border-t border-[#D5D7DA] lg:py-[80px] py-[40px] lg:gap-[180px]"
+    >
+      <!-- kotak pertama -->
+      <div class="lg:w-[380px]">
+        <a href="./01-home.html"
+          ><div
+            class="flex mb-[22px] gap-[9.19px] w-8 h-8 lg:w-[42px] lg:h-[42px]"
+          >
+            <img src="./src/Assets/img/Logo.png" alt="Logo" />
+            <span class="text-[24px] lg:font-bold font-SFPro items-center"
+              >shirt</span
+            >
+          </div></a
+        >
+        <p
+          class="font-normal text-[14px] mb-[16px] lg:mb-[40px] leading-[28px] text-[#535862]"
+        >
+          Explore a realm of style with our fashion e-commerce platform, where
+          shopping is effortless. Experience a smooth journey with an extensive
+          selection of trendy apparel, all delivered directly to your home.
+        </p>
+        <p class="font-bold text-[14px] mb-[20px]">Follow on Social Media</p>
+        <div class="flex mb-[16px]">
+          <a href="http://www.facebook.com"
+            ><img src="./src/Assets/img/FB.png" alt="Facebook"
+          /></a>
+          <a href="http://www.instagram.com"
+            ><img src="./src/Assets/img/IG.png" alt="Instagram"
+          /></a>
+          <a href="http://www.linkedin.com"
+            ><img src="./src/Assets/img/IN.png" alt="Linkedin"
+          /></a>
+          <a href="http://www.tiktok.com"
+            ><img src="./src/Assets/img/TT.png" alt="Tiktok"
+          /></a>
+        </div>
+      </div>
+      <!-- kotak kedua -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] mb-[16px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>E-Commerce</strong></a>
+        <a href="#">About Us</a>
+        <a href="#">Terms & Condition</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Blog</a>
+      </div>
+      <!-- kotak ketiga -->
+      <div
+        class="text-[#535862] flex flex-col gap-[16px] lg:gap-[20px] lg:w-[200px]"
+      >
+        <a href="#" class="text-black"><strong>Help</strong></a>
+        <a href="#">How to Transact</a>
+        <a href="#">Payment Method</a>
+        <a href="#">How to Register</a>
+      </div>
+    </footer>
   </body>
 </html>
